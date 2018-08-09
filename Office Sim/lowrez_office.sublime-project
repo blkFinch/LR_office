@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "./Assets",
+			"file_exclude_patterns":[ "*.dll", "*.meta"]
+		}
+	],
+		
+	"solution_file": "./Office Sim.sln"	
+	
+}
