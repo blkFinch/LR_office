@@ -15,11 +15,12 @@ public class PlayerController : MonoBehaviour {
 	float axis;
 
 	private LevelManager lm;
+	HideGame hg;
 
 	// Use this for initialization
 	void Start () {
 		lm = FindObjectOfType<LevelManager>();
-
+		hg = FindObjectOfType<HideGame>();
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
@@ -44,6 +45,10 @@ public class PlayerController : MonoBehaviour {
 		if( axis > 0  && transform.position.y < ymax ) { transform.position += Vector3.up * _speed; }
 
 		if(Input.GetButtonDown("Fire1")){ Fire(); }
+
+		if(Input.GetButtonDown("Fire2")){ hg.Cover(); }
+		if(Input.GetButtonUp("Fire2")){ hg.UnCover(); }
+
 		// float newY = Mathf.Clamp(transform.position.y,ymin, ymax);
   //       transform.position = new Vector2(transform.position.x,newY);
 		
