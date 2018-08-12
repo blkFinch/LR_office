@@ -249,7 +249,7 @@
 			"file": "Assets/Scripts/PlayerController.cs",
 			"settings":
 			{
-				"buffer_size": 1412,
+				"buffer_size": 1714,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -310,16 +310,24 @@
 		"selected_items":
 		[
 			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"omni",
 				"OmniSharpSublime: Clean"
 			],
 			[
 				"omnish",
 				"OmniSharpSublime: Hide Info Panel"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"remove",
@@ -339,10 +347,6 @@
 			],
 			[
 				"open",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"ope",
 				"PackageResourceViewer: Open Resource"
 			],
 			[
@@ -439,10 +443,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Flat Chameleon/Flat Chameleon.sublime-theme",
+		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Rainbow/Theme - Rainbow.sublime-settings",
+		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Flat Chameleon/Widget - Flat Chameleon.sublime-settings",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Position.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/CoverScreen.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Shredder.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/BossManager.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Position.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/.gitignore",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/PlayerController.cs",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Scripts/position.cs",
@@ -493,7 +500,6 @@
 		"/G/Unity/PinkMan/Assets/_Scripts/Coin.cs",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Eightlime/Eightlime Dark.sublime-theme",
-		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Rainbow/Theme - Rainbow.sublime-settings",
 		"/G/Unity/Tales From The Darkside/Assets/_scripts/InkManager.cs",
 		"/G/Unity/Learn Unity/2dTestZone/Assets/_Scripts/TalkingObject.cs",
 		"/G/Unity/PinkMan/Assets/_Scripts/ShowPosition.cs",
@@ -582,6 +588,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"axis",
+			"Vertical",
 			"levelManager",
 			";\n",
 			"speed",
@@ -685,15 +693,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1412,
+						"buffer_size": 1714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1313,
-								1313
+								377,
+								377
 							]
 						],
 						"settings":
@@ -712,7 +720,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.2,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -874,7 +882,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.573623188406,
 			1.0
 		],
 		"rows":
@@ -1017,7 +1025,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 156.0,
 	"status_bar_visible": true,
 	"template_settings":

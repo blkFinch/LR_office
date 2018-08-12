@@ -9,9 +9,23 @@ public class GameManager : MonoBehaviour {
 
 	bool bossIsActive = false;
 
+	public GameObject[] formations;
+	private GameObject formation;
+
 	// Use this for initialization
 	void Start () {
 		bm = FindObjectOfType<BossManager>();
+
+		SpawnFormation();
+	}
+
+	int PickFormation(){
+		return Random.Range(0, formations.Length);
+	}
+
+	public void SpawnFormation(){
+		int form = PickFormation();
+		formation = Instantiate(formations[form], transform.position, Quaternion.identity) as GameObject;
 	}
 	
 	// Update is called once per frame
@@ -20,6 +34,12 @@ public class GameManager : MonoBehaviour {
 			float p = _bps * Time.deltaTime;
 
 	        if(Random.value < p) { ActivateBoss(); }
+		}
+	}
+
+	void LateUpdate(){
+		if(formation = null){
+			Debug.Log("formation is null");
 		}
 	}
 

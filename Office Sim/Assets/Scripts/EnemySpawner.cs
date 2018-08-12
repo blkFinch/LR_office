@@ -13,11 +13,14 @@ public class EnemySpawner : MonoBehaviour {
     private float xmax;
     private float xmin;
 
+    private GameManager gm;
+
 	// Use this for initialization
 	void Start () {
         //initialize enemy movement and sp`eed
         left = true;
         
+        gm = FindObjectOfType<GameManager>();
 
         //calculate edges
         float distanceToCamera = transform.position.z - Camera.main.transform.position.z;
@@ -85,6 +88,11 @@ public class EnemySpawner : MonoBehaviour {
         return true;
     }
 
+    void DestroyThis(){
+        gm.SpawnFormation();
+        Destroy(this.gameObject);
+    }
+
     // Update is called once per frame 
     void Update () {
         float rightForm = transform.position.y + (0.5f * width);
@@ -100,7 +108,7 @@ public class EnemySpawner : MonoBehaviour {
 
         if (AllMembersDead())
         {
-            SpawnUntilFull();
+            Invoke("DestroyThis", 1);
         }
 
     }

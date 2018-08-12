@@ -11,8 +11,12 @@ public class PlayerController : MonoBehaviour {
 	// clamp ship movement to screen
 	public float ymin = -3.71f; 
 	public float ymax =-1.63f;
+	public float xmax = 5;
+	public float xmin = 1;
+
 
 	float axis;
+	float hAxis;
 
 	private LevelManager lm;
 	HideGame hg;
@@ -40,10 +44,13 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 
 		axis = Input.GetAxis("Vertical");
+		hAxis = Input.GetAxis("Horizontal");
 
 		if( axis < 0 && transform.position.y > ymin ) { transform.position += Vector3.down * _speed; }
 		if( axis > 0  && transform.position.y < ymax ) { transform.position += Vector3.up * _speed; }
-
+		if( hAxis < 0 && transform.position.x > xmin ) { transform.position += Vector3.left * _speed; }
+		if( hAxis > 0  && transform.position.x < xmax ) { transform.position += Vector3.right * _speed; }
+		
 		if(Input.GetButtonDown("Fire1")){ Fire(); }
 
 		if(Input.GetButtonDown("Fire2")){ hg.Cover(); }
