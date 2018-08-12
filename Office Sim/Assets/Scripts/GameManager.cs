@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	public float _bps = 0.2f;
 
 	bool bossIsActive = false;
+	bool screenIsHidden = false;
+	bool counting = false;
 
 	public GameObject[] formations;
 	private GameObject formation;
@@ -17,6 +19,13 @@ public class GameManager : MonoBehaviour {
 		bm = FindObjectOfType<BossManager>();
 
 		SpawnFormation();
+	}
+
+	public void SetScreenIsHidden(string setting ){
+		if(setting == "true"){
+			screenIsHidden = true;
+		}
+		else{ screenIsHidden = false; }
 	}
 
 	int PickFormation(){
@@ -30,6 +39,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if(!bossIsActive){
 			float p = _bps * Time.deltaTime;
 
@@ -38,15 +48,25 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void LateUpdate(){
-		if(formation = null){
-			Debug.Log("formation is null");
+		
+		if(bossIsActive && !screenIsHidden){
+			// start countdown to game over
+			if(!counting){
+				counting = true;
+				bm.StartCountdown();
+			}
+		}else{ 
+			bm.StopCountdown(); 
+			counting = false;
 		}
+
 	}
+
 
 	void ActivateBoss(){
 		ToggleBoss();
         bm.SummonBoss();
-        Invoke("DeactivateBoss", 2f);
+        Invoke("DeactivateBoss", 3f);
 	}
 
 	void ToggleBoss(){
