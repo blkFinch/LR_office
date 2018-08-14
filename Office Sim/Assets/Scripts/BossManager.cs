@@ -9,6 +9,7 @@ public class BossManager : MonoBehaviour {
 	SpriteRenderer sprite;
 
 	public Text cd_text;
+	public int countdownTime;
 
 	LevelManager lm;
 
@@ -47,12 +48,12 @@ public class BossManager : MonoBehaviour {
 	}
 
 	IEnumerator CountDown(){
-		cd_text.text = "3";
-		yield return new WaitForSeconds(1);
-		cd_text.text = "2";
-		yield return new WaitForSeconds(1);
-		cd_text.text = "1";
-		yield return new WaitForSeconds(1);
+		int count = countdownTime;
+		for(int i = 0; i < countdownTime; i++){
+			cd_text.text = count.ToString();
+			count--;
+			yield return new WaitForSeconds(1);
+		}
 		lm.LoadGameOver();
 	}
 

@@ -20,11 +20,13 @@ public class PlayerController : MonoBehaviour {
 
 	private LevelManager lm;
 	HideGame hg;
-
+	Rigidbody2D rb;
 	// Use this for initialization
 	void Start () {
 		lm = FindObjectOfType<LevelManager>();
 		hg = FindObjectOfType<HideGame>();
+		rb = GetComponent<Rigidbody2D>();
+		_speed = _speed * Time.deltaTime;
 	}
 
 	void OnTriggerEnter2D(Collider2D col){

@@ -7,6 +7,7 @@ TagManager:
   - Background
   - Laser
   - EnemyLaser
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 2228392985
+    locked: 0
+  - name: text
+    uniqueID: 539411965
     locked: 0

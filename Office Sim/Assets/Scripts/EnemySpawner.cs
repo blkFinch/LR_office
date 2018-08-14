@@ -6,31 +6,16 @@ public class EnemySpawner : MonoBehaviour {
     public GameObject enemyPrefab;
     public float width = 1f;
     public float height = 1f;
-    public float speed = 5f;
     public float spawnDelay = 0.5f;
-    bool left;
-
-    private float xmax;
-    private float xmin;
 
     private GameManager gm;
 
 	// Use this for initialization
 	void Start () {
-        //initialize enemy movement and sp`eed
-        left = true;
-        
+        //initialize enemy movement and sp`eed        
         gm = FindObjectOfType<GameManager>();
 
-        //calculate edges
-        float distanceToCamera = transform.position.z - Camera.main.transform.position.z;
-        Vector3 leftEdge = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanceToCamera));
-        Vector3 rightEdge = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanceToCamera));
-        xmin = leftEdge.x;
-        xmax = rightEdge.x;
-
         SpawnUntilFull();
-       
 	}
 
     void Spawn()
@@ -90,26 +75,12 @@ public class EnemySpawner : MonoBehaviour {
 
     void DestroyThis(){
         gm.SpawnFormation();
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     // Update is called once per frame 
     void Update () {
-        float rightForm = transform.position.y + (0.5f * width);
-        float leftForm = transform.position.y - (0.5f * width);
-
-        if (leftForm > xmin & left) 
-        {transform.position += Vector3.up * speed * Time.deltaTime; }
-        else { left = false; }
-
-        if (rightForm <xmax & !left)
-        {transform.position += Vector3.down * speed*Time.deltaTime;}
-        else {left = true;}
-
-        if (AllMembersDead())
-        {
-            Invoke("DestroyThis", 1);
-        }
-
+        
+        if (AllMembersDead()){ Invoke("DestroyThis", 1); }
     }
 }

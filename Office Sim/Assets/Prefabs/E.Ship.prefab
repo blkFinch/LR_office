@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4271985412474464}
   - component: {fileID: 61184798949533726}
   - component: {fileID: 114922535097369030}
-  m_Layer: 0
+  - component: {fileID: 95708346672877448}
+  - component: {fileID: 50448628631892238}
+  m_Layer: 4
   m_Name: E.Ship
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +40,7 @@ GameObject:
   - component: {fileID: 4785688918576856}
   - component: {fileID: 212981565440664190}
   - component: {fileID: 114421955886883568}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: SpriteRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1518737009482374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9, y: -2.43, z: 1}
+  m_LocalPosition: {x: 0.9, y: -2.71, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4785688918576856}
@@ -72,6 +74,26 @@ Transform:
   m_Father: {fileID: 4271985412474464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50448628631892238
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518737009482374}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61184798949533726
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -84,7 +106,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.064126074, y: -0.059545755}
+  m_Offset: {x: 0.006050974, y: -0.001470685}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -95,8 +117,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.395383, y: 0.40454388}
+  m_Size: {x: 0.88837594, y: 0.520694}
   m_EdgeRadius: 0
+--- !u!95 &95708346672877448
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518737009482374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114421955886883568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,8 +161,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserSpeed: 1
   laser: {fileID: 1288391914626246, guid: cd72996737ae4134ca7bb435cb13004a, type: 2}
-  SPS: 0.3
-  health: 200
+  SPS: 0
+  health: 100
+  explosion: {fileID: 21300004, guid: b22b7e85e7048e045a0448558e52187e, type: 3}
+  points: 100
+  _speed: 0.5
+  up: 0
+  ymax: -1.72
+  ymin: -3.68
 --- !u!212 &212981565440664190
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -158,7 +203,7 @@ SpriteRenderer:
   m_SortingLayerID: -2066574311
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: b3642617c3bb81a4fbbb5fd5f556075b, type: 3}
+  m_Sprite: {fileID: 21300008, guid: b22b7e85e7048e045a0448558e52187e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

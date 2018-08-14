@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -11,8 +12,13 @@ public class GameManager : MonoBehaviour {
 	bool screenIsHidden = false;
 	bool counting = false;
 
+	public bool bossInPlay  = false;
+	public Text scoreDisplay;
+
 	public GameObject[] formations;
 	private GameObject formation;
+
+	int score;
 
 	// Use this for initialization
 	void Start () {
@@ -47,6 +53,16 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void AddScore(int points){
+
+		score += points;
+		DisplayScore();
+	}
+
+	void DisplayScore(){
+		scoreDisplay.text = score.ToString();
+	}
+
 	void LateUpdate(){
 		
 		if(bossIsActive && !screenIsHidden){
@@ -64,9 +80,11 @@ public class GameManager : MonoBehaviour {
 
 
 	void ActivateBoss(){
-		ToggleBoss();
-        bm.SummonBoss();
-        Invoke("DeactivateBoss", 3f);
+		if(bossInPlay){
+			ToggleBoss();
+	        bm.SummonBoss();
+	        Invoke("DeactivateBoss", 3f);
+	    }
 	}
 
 	void ToggleBoss(){
