@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+	// turn true to begin boss loop
+	public bool bossInPlay  = false;
+	
 	BossManager bm;
 	public float _bps = 0.2f;
 
@@ -12,18 +15,25 @@ public class GameManager : MonoBehaviour {
 	bool screenIsHidden = false;
 	bool counting = false;
 
-	public bool bossInPlay  = false;
-	public Text scoreDisplay;
-
 	public GameObject[] formations;
 	private GameObject formation;
+
+	int playerLives = 2;
+	LifeCounter lc;
+
+	LevelManager lm;
+	ScoreManager sm;
+	PlayerController pc;
 
 	int score;
 
 	// Use this for initialization
 	void Start () {
+		lm = FindObjectOfType<LevelManager>();
 		bm = FindObjectOfType<BossManager>();
-
+		lc = FindObjectOfType<LifeCounter>();
+		pc = FindObjectOfType<PlayerController>();
+		sm = FindObjectOfType<ScoreManager>();
 		SpawnFormation();
 	}
 
@@ -48,23 +58,32 @@ public class GameManager : MonoBehaviour {
 
 		if(!bossIsActive){
 			float p = _bps * Time.deltaTime;
-
 	        if(Random.value < p) { ActivateBoss(); }
 		}
 	}
 
 	public void AddScore(int points){
-
 		score += points;
-		DisplayScore();
+		sm.SetScore(score);
 	}
 
-	void DisplayScore(){
-		scoreDisplay.text = score.ToString();
+
+	public void LoseLife(){
+		playerLives --;
+		if(playerLives < 0){ lm.LoadGameOver(); }
+		else{
+			lc.RenderClock(playerLives);
+			Invoke("Respawn", 0.5f);
+		}
+	}
+
+	void Respawn(){
+		pc.Respawn();
 	}
 
 	void LateUpdate(){
-		
+
+		// this disables countdown while screen is hidden
 		if(bossIsActive && !screenIsHidden){
 			// start countdown to game over
 			if(!counting){
@@ -75,7 +94,6 @@ public class GameManager : MonoBehaviour {
 			bm.StopCountdown(); 
 			counting = false;
 		}
-
 	}
 
 
@@ -83,7 +101,8 @@ public class GameManager : MonoBehaviour {
 		if(bossInPlay){
 			ToggleBoss();
 	        bm.SummonBoss();
-	        Invoke("DeactivateBoss", 3f);
+	        float bossCount = Random.Range(3f, 6f);
+	        Invoke("DeactivateBoss", bossCount);
 	    }
 	}
 

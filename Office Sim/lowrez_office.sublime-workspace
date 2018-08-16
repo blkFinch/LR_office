@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"SP",
+				"SpriteRenderer"
+			],
+			[
+				"Loa",
+				"LoadScene(string sceneName)\tvoid"
+			],
+			[
+				"Scene",
+				"SceneManager\tSceneManager"
+			],
+			[
+				"S",
+				"SetActive(bool value)\tvoid"
+			],
+			[
+				"Aud",
+				"AudioClip\tAudioClip"
+			],
+			[
+				"DisplayScore",
+				"DisplayScore()\tvoid"
+			],
+			[
+				"Collis",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"Ene",
+				"EnemyShip"
+			],
+			[
+				"flo",
+				"float\tfloat"
+			],
+			[
+				"Vector",
+				"Vector3\tVector3"
+			],
+			[
+				"boss",
+				"bossInPlay"
+			],
+			[
+				"Destroy",
+				"DestroyEnemy"
+			],
+			[
+				"Sp",
+				"SpriteRenderer"
+			],
+			[
+				"tra",
+				"transform\tTransform { get; }"
+			],
+			[
+				"For",
+				"ForceMode2D\tForceMode2D"
+			],
+			[
+				"trans",
+				"transform\tTransform { get; }"
+			],
+			[
+				"Add",
+				"AddForce(Vector2 force)\tvoid"
+			],
+			[
+				"GetCom",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Rigi",
+				"Rigidbody2D"
+			],
+			[
 				"count",
 				"countdownTime"
 			],
@@ -52,24 +128,12 @@
 				"RenderBoss"
 			],
 			[
-				"Sp",
-				"SpriteRenderer"
-			],
-			[
 				"scene",
 				"SceneManager\tSceneManager"
 			],
 			[
-				"tra",
-				"transform.position.y"
-			],
-			[
 				"y",
 				"y\tfloat"
-			],
-			[
-				"trans",
-				"transform.position"
 			],
 			[
 				"GetButt",
@@ -140,10 +204,6 @@
 				"textDisplay"
 			],
 			[
-				"GetCom",
-				"GameObject.GetComponent<T>()"
-			],
-			[
 				"fire",
 				"fireballFrame"
 			],
@@ -204,10 +264,6 @@
 				"SetBool\tAnimator.*(id, value)"
 			],
 			[
-				"Rigi",
-				"Rigidbody2D\t[class]"
-			],
-			[
 				"Rgid",
 				"Rigidbody2D\t[class]"
 			],
@@ -248,19 +304,37 @@
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/LevelManager.cs",
+			"file": "Assets/Scripts/PlayerController.cs",
 			"settings":
 			{
-				"buffer_size": 232,
+				"buffer_size": 1935,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/PlayerController.cs",
+			"file": "Assets/HideGame.cs",
 			"settings":
 			{
-				"buffer_size": 1714,
+				"buffer_size": 492,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/StartButton.cs",
+			"settings":
+			{
+				"buffer_size": 418,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/LifeCounter.cs",
+			"settings":
+			{
+				"buffer_size": 334,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -269,7 +343,16 @@
 			"file": "Assets/Scripts/GameManager.cs",
 			"settings":
 			{
-				"buffer_size": 1451,
+				"buffer_size": 1794,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/LevelManager.cs",
+			"settings":
+			{
+				"buffer_size": 371,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -278,34 +361,25 @@
 			"file": "Assets/Scripts/BossManager.cs",
 			"settings":
 			{
-				"buffer_size": 1113,
+				"buffer_size": 1269,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemyShip.cs",
-			"settings":
-			{
-				"buffer_size": 1515,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemySpawner.cs",
-			"settings":
-			{
-				"buffer_size": 2871,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "Assets/Scripts/EnemyShip.cs",
 			"settings":
 			{
-				"buffer_size": 1385,
+				"buffer_size": 2676,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
+			"settings":
+			{
+				"buffer_size": 1797,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -472,8 +546,17 @@
 	],
 	"file_history":
 	[
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/HideGame.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/GameManager.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/EnemySpawner.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/StartButton.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Cursor.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Prefabs/LevelManager.prefab",
+		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemySpawner.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/LevelManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/BossManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/EnemyShip.cs",
+		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemyShip.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/HideGame.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/PlayerController.cs",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Flat Chameleon/Flat Chameleon.sublime-theme",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Rainbow/Theme - Rainbow.sublime-settings",
@@ -481,15 +564,12 @@
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Position.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/CoverScreen.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Shredder.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/BossManager.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/.gitignore",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Scripts/position.cs",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/Player/PlayerController.cs",
-		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemyShip.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/Office Sim/Assets/Scripts/Shredder.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/Office Sim/Assets/Laser.cs",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Scripts/laser.cs",
-		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemySpawner.cs",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Scripts/Shredder.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/.gitignore",
 		"/E/DeepRepos/lowrezgj/office_sim/Office Sim/Assets/Scripts/SnapToGrid.cs",
@@ -593,13 +673,7 @@
 		"/G/Unity/testVNovel/Assets/_Scripts/InkManager.cs",
 		"/G/Unity/testVNovel/Assets/_Scripts/Actor.cs",
 		"/C/raylib/hello_windows.rb",
-		"/G/Unity/Tales From The Darkside/Assets/_scripts/JillInk.cs",
-		"/G/Unity/Tales From The Darkside/Assets/inkscripts/exampleCustomer.ink",
-		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/User/ink-global-symbols.tmPreferences",
-		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/User/ink.sublime-settings",
-		"/G/Unity/Tales From The Darkside/Assets/Scripts/Splash.cs",
-		"/G/Unity/Learn Unity/GlitchGarden/Assets/Scripts/LevelManager.cs",
-		"/F/Unity/TalesWIN-LOCAL/Assets/_scripts_repo/TalesDark/CoffeeManager.cs"
+		"/G/Unity/Tales From The Darkside/Assets/_scripts/JillInk.cs"
 	],
 	"find":
 	{
@@ -617,6 +691,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"leftForm",
+			"rightForm",
+			"private",
+			" += Ve",
+			"transform.position",
+			"a",
 			"axis",
 			"Vertical",
 			"levelManager",
@@ -650,53 +730,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/LevelManager.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								226,
-								226
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"173,185": "Method 'LoadGameOver' can be made static.",
-								"26,31": "Using directive is not used by code and can be removed safely."
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Assets/Scripts/PlayerController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1714,
+						"buffer_size": 1935,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								547,
-								547
+								300,
+								300
 							]
 						],
 						"settings":
@@ -709,35 +755,36 @@
 								"287,291": "Name should have prefix '_'. (Rule 'Fields').",
 								"315,319": "Name should have prefix '_'. (Rule 'Fields').",
 								"339,343": "Name should have prefix '_'. (Rule 'Fields').",
-								"574,584": "Parameter can be declared with base type",
-								"708,718": "Use 'var' keyword",
-								"786,787": "Type cast is redundant"
+								"397,400": "Name should have prefix '_'. (Rule 'Fields').",
+								"667,677": "Parameter can be declared with base type",
+								"861,871": "Use 'var' keyword",
+								"939,940": "Type cast is redundant"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 312.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Assets/Scripts/GameManager.cs",
+					"buffer": 1,
+					"file": "Assets/HideGame.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1451,
+						"buffer_size": 492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1316,
-								1316
+								154,
+								154
 							]
 						],
 						"settings":
@@ -745,47 +792,6 @@
 							"oops":
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
-								"190,195": "Initializing field by default value is redundant",
-								"220,225": "Initializing field by default value is redundant",
-								"244,249": "Initializing field by default value is redundant",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"273,283": "Name should have prefix '_'. (Rule 'Fields').",
-								"469,476": "Parameter can be IComparable",
-								"482,484": "Convert to '?:' expression",
-								"789,790": "Type cast is redundant"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 508.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Scripts/BossManager.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								292,
-								293
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"205,212": "Name should have prefix '_'. (Rule 'Fields').",
-								"226,239": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely."
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
@@ -795,90 +801,125 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 4,
-					"file": "/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemyShip.cs",
+					"buffer": 2,
+					"file": "Assets/Scripts/StartButton.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1515,
+						"buffer_size": 418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								418,
+								418
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"oops":
+							{
+								"125,137": "'LevelManager' is not a known identifier",
+								"208,220": "'LevelManager' is not a known identifier",
+								"223,224": "Cannot convert from ? to [UnknownType LevelManager]",
+								"324,333": "'LevelManager' does not contain a definition for 'StartGame'",
+								"335,336": "'LevelManager' does not contain a definition for 'StartGame'",
+								"395,407": "'LevelManager' does not contain a definition for 'LoadControls'",
+								"409,410": "'LevelManager' does not contain a definition for 'LoadControls'"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemySpawner.cs",
+					"buffer": 3,
+					"file": "Assets/Scripts/LifeCounter.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2871,
+						"buffer_size": 334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1130,
-								1176
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/GameManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								452
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.4,
+						"translation.y": 195.2,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 6,
-					"file": "Assets/Scripts/EnemyShip.cs",
+					"buffer": 5,
+					"file": "Assets/Scripts/LevelManager.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1385,
+						"buffer_size": 371,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								769,
-								769
+								371,
+								371
 							]
 						],
 						"settings":
@@ -887,24 +928,133 @@
 							"oops":
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
-								"1034,1044": "Use 'var' keyword",
-								"1111,1112": "Type cast is redundant",
+								"173,185": "Method 'LoadGameOver' can be made static.",
+								"244,253": "Method 'StartGame' can be made static.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"312,324": "Method 'LoadControls' can be made static."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/BossManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"205,212": "Name should have prefix '_'. (Rule 'Fields').",
+								"226,239": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"280,290": "Name should have prefix '_'. (Rule 'Fields')."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Scripts/EnemyShip.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
 								"139,149": "Name should have prefix '_'. (Rule 'Fields').",
+								"1608,1609": "Assignment is redundant",
 								"174,179": "Name should have prefix '_'. (Rule 'Fields').",
 								"198,201": "'SPS' should start with a lower case letter. (Rule 'Fields')",
+								"1987,1997": "Use 'var' keyword",
+								"2064,2065": "Type cast is redundant",
 								"230,236": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"451,461": "Parameter can be declared with base type"
+								"263,272": "Name should have prefix '_'. (Rule 'Fields').",
+								"318,321": "Name should have prefix '_'. (Rule 'Fields').",
+								"344,348": "Name should have prefix '_'. (Rule 'Fields').",
+								"366,372": "Name should have prefix '_'. (Rule 'Fields').",
+								"476,478": "Name should have prefix '_'. (Rule 'Fields').",
+								"504,508": "Name should have prefix '_'. (Rule 'Fields').",
+								"527,531": "Name should have prefix '_'. (Rule 'Fields').",
+								"705,715": "Parameter can be declared with base type"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 249.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -938,7 +1088,7 @@
 		"cols":
 		[
 			0.0,
-			0.434895833333,
+			0.5671875,
 			1.0
 		],
 		"rows":
@@ -966,7 +1116,7 @@
 	},
 	"output.variable_get":
 	{
-		"height": 112.0
+		"height": 95.0
 	},
 	"pinned_build_system": "",
 	"project": "lowrez_office.sublime-project",
@@ -982,20 +1132,44 @@
 		"selected_items":
 		[
 			[
-				"bos",
-				"Scripts\\BossManager.cs"
+				"G",
+				"Scripts\\GameManager.cs"
+			],
+			[
+				"lifecou",
+				"Scripts\\LifeCounter.cs"
+			],
+			[
+				"start",
+				"Scripts\\StartButton.cs"
 			],
 			[
 				"hide",
 				"HideGame.cs"
 			],
 			[
-				"player",
-				"Scripts\\PlayerController.cs"
+				"level",
+				"Scripts\\LevelManager.cs"
+			],
+			[
+				"curs",
+				"Cursor.cs"
+			],
+			[
+				"bos",
+				"Scripts\\BossManager.cs"
+			],
+			[
+				"en",
+				"Scripts\\EnemyShip.cs"
 			],
 			[
 				"ene",
 				"Scripts\\EnemySpawner.cs"
+			],
+			[
+				"player",
+				"Scripts\\PlayerController.cs"
 			],
 			[
 				"pla",
@@ -1008,10 +1182,6 @@
 			[
 				"las",
 				"Laser.cs"
-			],
-			[
-				"en",
-				"Scripts\\EnemyShip.cs"
 			],
 			[
 				"game",
@@ -1094,7 +1264,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 156.0,
+	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

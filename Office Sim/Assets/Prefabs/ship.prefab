@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4849775474792596}
   - component: {fileID: 114427977673012228}
   - component: {fileID: 61535369268886162}
+  - component: {fileID: 82993662355410430}
   m_Layer: 0
   m_Name: ship
   m_TagString: Untagged
@@ -97,6 +98,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7751336, y: 0.8673756}
   m_EdgeRadius: 0
+--- !u!82 &82993662355410430
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867723349502930}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 2.86
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114427977673012228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,6 +196,8 @@ MonoBehaviour:
   ymax: -1.62
   xmax: 3
   xmin: -3.2
+  zap: {fileID: 8300000, guid: 826a17a8d270b5d4c8aedc241b2c0884, type: 3}
+  dead: {fileID: 21300004, guid: b22b7e85e7048e045a0448558e52187e, type: 3}
 --- !u!114 &114481518494620688
 MonoBehaviour:
   m_ObjectHideFlags: 1

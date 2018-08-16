@@ -12,9 +12,15 @@ public class BossManager : MonoBehaviour {
 	public int countdownTime;
 
 	LevelManager lm;
+	AlertMeter meter;
+	PlayerController pc;
+
+	public GameObject bossScreen;
 
 	// Use this for initialization
 	void Start () {
+		pc = FindObjectOfType<PlayerController>();
+		meter = FindObjectOfType<AlertMeter>();
 		lm = FindObjectOfType<LevelManager>();
 		door_anim = GetComponentInChildren<Animator>();
 		sprite = GetComponentInChildren<SpriteRenderer>();
@@ -35,6 +41,7 @@ public class BossManager : MonoBehaviour {
 	}
 
 	public void HideBoss(){
+		meter.ClearMeterSprite();
 		sprite.enabled = false;
 	}
 
@@ -47,14 +54,25 @@ public class BossManager : MonoBehaviour {
 		StopCoroutine("CountDown");
 	}
 
+	void PlayerCaught(){
+		bossScreen.SetActive(true);
+		pc.PlayerDestroyed();
+		Invoke("GameOver", 1);
+	}
+
+	void GameOver(){
+		bossScreen.SetActive(false);
+		meter.ClearMeterSprite();
+	}
+
 	IEnumerator CountDown(){
-		int count = countdownTime;
-		for(int i = 0; i < countdownTime; i++){
-			cd_text.text = count.ToString();
-			count--;
-			yield return new WaitForSeconds(1);
+		meter.UnlockMeterSprite();
+		for(int i = 0; i < 9; i++){
+			meter.SwapSprite(i);
+			yield return new WaitForSeconds(0.3f);
 		}
-		lm.LoadGameOver();
+		
+		PlayerCaught();
 	}
 
 }

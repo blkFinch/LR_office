@@ -12,10 +12,8 @@ public class EnemyShip : MonoBehaviour {
 
     public Sprite explosion;
     SpriteRenderer sr;
-    // public AudioClip bloop;
-    // public AudioClip dead;
-
-    // public GameObject explosion;
+    public AudioClip zip;
+    public AudioClip dead;
 
     public int points = 100;
 
@@ -51,6 +49,7 @@ public class EnemyShip : MonoBehaviour {
 
                 // Instantiate(explosion, transform.position, Quaternion.identity);
                 sr.sprite = explosion;
+                AudioSource.PlayClipAtPoint(dead, transform.position);
                 Invoke("DestroyEnemy", 0.5f);
                 // AudioSource.PlayClipAtPoint(dead, transform.position);
             }
@@ -74,12 +73,13 @@ public class EnemyShip : MonoBehaviour {
 
     void DestroyEnemy(){
         gm.AddScore(points);
+
         Destroy(gameObject);
     }
 
     void fireLaser()
     {
-
+        AudioSource.PlayClipAtPoint(zip, transform.position);
         GameObject beam = Instantiate(laser, transform.position, Quaternion.identity) as GameObject;
         beam.GetComponent<Rigidbody2D>().velocity = new Vector2(-1f * laserSpeed, 0f);
     }

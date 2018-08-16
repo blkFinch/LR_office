@@ -15,10 +15,14 @@ public class HideGame : MonoBehaviour {
 	
 	public void Cover(){
 		anim.Play("cover");
-		gm.SetScreenIsHidden("true");
+		if(gm != null){
+			gm.SetScreenIsHidden("true");
+		}
 	}
 	public void UnCover(){
 		anim.Play("idle");
-		gm.SetScreenIsHidden("false");
+		if(gm != null){
+			gm.SetScreenIsHidden("false");
+		}
 	}
 }
