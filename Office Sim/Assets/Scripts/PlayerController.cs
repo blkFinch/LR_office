@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour {
 
 	public float _speed;
 	public int _laserSpeed = 1;
-	public GameObject _laser;
+	public GameObject[] lasers;
+	int activeLaser;
 	
 	// clamp ship movement to screen
 	public float ymin = -3.71f; 
@@ -57,11 +58,21 @@ public class PlayerController : MonoBehaviour {
 		isDead = false;
 	}
 
+	//the laser array is set publically so be aware
+	//First laser in array is default
+	public void PowerUpLaser(){
+		activeLaser = 1;
+	}
+
+	public void PowerDownLaser(){
+		activeLaser = 0;
+	}
+
 	//fires laser
     void Fire()
     {
     	AudioSource.PlayClipAtPoint(zap,  transform.position);
-        GameObject beam = Instantiate(_laser, transform.position, Quaternion.identity) as GameObject;
+        GameObject beam = Instantiate(lasers[activeLaser], transform.position, Quaternion.identity) as GameObject;
         beam.GetComponent<Rigidbody2D>().velocity = new Vector2(1f * _laserSpeed, 0f);
     }
 	

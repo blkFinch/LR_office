@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"Deactiv",
+				"DeactivatePhone"
+			],
+			[
+				"phone",
+				"phoneInPlay\tbool"
+			],
+			[
+				"pho",
+				"phoneInPlay\tbool"
+			],
+			[
+				"Deact",
+				"DeactivatePhone"
+			],
+			[
+				"GetKey",
+				"GetKeyDown(string name)\tbool"
+			],
+			[
+				"Anima",
+				"Animator\tAnimator"
+			],
+			[
+				"Get",
+				"GetComponentInChildren<T>()\tT"
+			],
+			[
+				"score",
+				"scoreDisplay"
+			],
+			[
+				"Render",
+				"RenderClock"
+			],
+			[
+				"Player",
+				"PlayerController\tPlayerController"
+			],
+			[
+				"Game",
+				"GameManager\tGameManager"
+			],
+			[
+				"Pl",
+				"PlayerController"
+			],
+			[
+				"Load",
+				"LoadGameOver()\tvoid"
+			],
+			[
+				"Disp",
+				"DisplayLives()\tvoid"
+			],
+			[
 				"SP",
 				"SpriteRenderer"
 			],
@@ -88,14 +144,6 @@
 				"LoadGameOver()\tvoid"
 			],
 			[
-				"Game",
-				"GameManager\tGameManager"
-			],
-			[
-				"Get",
-				"GetButtonDown(string buttonName)\tbool"
-			],
-			[
 				"Spa",
 				"SpawnFormation"
 			],
@@ -122,10 +170,6 @@
 			[
 				"Activate",
 				"ActivateBoss()\tvoid"
-			],
-			[
-				"Render",
-				"RenderBoss"
 			],
 			[
 				"scene",
@@ -194,10 +238,6 @@
 			[
 				"Create",
 				"CreateDialogueMenu"
-			],
-			[
-				"GetKey",
-				"Input.GetKeyDown(name)"
 			],
 			[
 				"text",
@@ -304,46 +344,37 @@
 	"buffers":
 	[
 		{
+			"file": "Assets/Scripts/BossManager.cs",
+			"settings":
+			{
+				"buffer_size": 1454,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/PhoneManager.cs",
+			"settings":
+			{
+				"buffer_size": 449,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Laser.cs",
+			"settings":
+			{
+				"buffer_size": 464,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Assets/Scripts/PlayerController.cs",
 			"settings":
 			{
-				"buffer_size": 1935,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/HideGame.cs",
-			"settings":
-			{
-				"buffer_size": 492,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/StartButton.cs",
-			"settings":
-			{
-				"buffer_size": 418,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/LifeCounter.cs",
-			"settings":
-			{
-				"buffer_size": 334,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/GameManager.cs",
-			"settings":
-			{
-				"buffer_size": 1794,
+				"buffer_size": 2456,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -352,34 +383,25 @@
 			"file": "Assets/Scripts/LevelManager.cs",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 436,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/BossManager.cs",
+			"file": "Assets/Scripts/GameManager.cs",
 			"settings":
 			{
-				"buffer_size": 1269,
+				"buffer_size": 2967,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/EnemyShip.cs",
+			"file": "Assets/Scripts/AlertMeter.cs",
 			"settings":
 			{
-				"buffer_size": 2676,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
-			"settings":
-			{
-				"buffer_size": 1797,
+				"buffer_size": 497,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -413,6 +435,10 @@
 		"selected_items":
 		[
 			[
+				"omn",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
 				"ope",
 				"PackageResourceViewer: Open Resource"
 			],
@@ -443,10 +469,6 @@
 			[
 				"omnishar",
 				"OmniSharpSublime: Reload Solution"
-			],
-			[
-				"omn",
-				"OmniSharpSublime: Add New Interface"
 			],
 			[
 				"open",
@@ -546,17 +568,27 @@
 	],
 	"file_history":
 	[
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/Laser.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/MusicManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/ScoreManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/StartButton.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/GameOver.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/LifeCounter.cs",
+		"/G/Unity/Learn Unity/Brick Breaker/Assets/Scripts/MusicPlayer.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/BossManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/AlertMeter.cs",
+		"/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/EnemyShip.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/HideGame.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/SnapToGrid.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/CoverScreen.cs",
+		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/LevelManager.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/GameManager.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/EnemySpawner.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/StartButton.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Cursor.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Prefabs/LevelManager.prefab",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemySpawner.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/LevelManager.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/BossManager.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/EnemyShip.cs",
 		"/G/Unity/Learn Unity/Laser Defender/Laser Defender/Assets/Entities/enemies/EnemyShip.cs",
-		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/HideGame.cs",
 		"/E/DeepRepos/lowrezgj/office_sim/LR_office/Office Sim/Assets/Scripts/PlayerController.cs",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Flat Chameleon/Flat Chameleon.sublime-theme",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Rainbow/Theme - Rainbow.sublime-settings",
@@ -580,7 +612,6 @@
 		"/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/Player.cs",
 		"/E/DeepRepos/story_teller/StoryTeller/StoryTeller.sublime-project",
 		"/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/Transition.cs",
-		"/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
 		"/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/LevelManager.cs",
 		"/E/PixelVision/Workspace/Sandbox/code.lua",
 		"/G/Unity/Learn Unity/TwinSticks/TwinSticksGame/twinstickstp.sublime-project",
@@ -664,16 +695,7 @@
 		"/E/Dropbox/Unity/testNovel/Assets/_Scripts/CharacterManager.cs",
 		"/G/Unity/Tales From The Darkside/Assets/inkscripts/Rivie_example.ink",
 		"/C/Users/galen/AppData/Roaming/Sublime Text 3/Packages/Theme - Windows 10/Windows 10.sublime-theme",
-		"/E/Dropbox/Unity/testNovel/Assets/_Scripts/GameManager.cs",
-		"/E/Dropbox/Unity/testNovel/Assets/_Scripts/Actor.cs",
-		"/E/Dropbox/Unity/testNovel/Assets/_Scripts/MainStory.ink",
-		"/G/Unity/testVNovel/Assets/_Scripts/Hello.ink",
-		"/G/Unity/testVNovel/Assets/_Scripts/CharacterManager.cs",
-		"/G/Unity/testVNovel/Assets/Plugins/Ink/Example/Scripts/BasicInkExample.cs",
-		"/G/Unity/testVNovel/Assets/_Scripts/InkManager.cs",
-		"/G/Unity/testVNovel/Assets/_Scripts/Actor.cs",
-		"/C/raylib/hello_windows.rb",
-		"/G/Unity/Tales From The Darkside/Assets/_scripts/JillInk.cs"
+		"/E/Dropbox/Unity/testNovel/Assets/_Scripts/GameManager.cs"
 	],
 	"find":
 	{
@@ -725,201 +747,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/PlayerController.cs",
+					"file": "Assets/Scripts/BossManager.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1935,
+						"buffer_size": 1454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"257,261": "Name should have prefix '_'. (Rule 'Fields').",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"287,291": "Name should have prefix '_'. (Rule 'Fields').",
-								"315,319": "Name should have prefix '_'. (Rule 'Fields').",
-								"339,343": "Name should have prefix '_'. (Rule 'Fields').",
-								"397,400": "Name should have prefix '_'. (Rule 'Fields').",
-								"667,677": "Parameter can be declared with base type",
-								"861,871": "Use 'var' keyword",
-								"939,940": "Type cast is redundant"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 312.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Assets/HideGame.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 492,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"26,31": "Using directive is not used by code and can be removed safely."
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Scripts/StartButton.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								418,
-								418
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"125,137": "'LevelManager' is not a known identifier",
-								"208,220": "'LevelManager' is not a known identifier",
-								"223,224": "Cannot convert from ? to [UnknownType LevelManager]",
-								"324,333": "'LevelManager' does not contain a definition for 'StartGame'",
-								"335,336": "'LevelManager' does not contain a definition for 'StartGame'",
-								"395,407": "'LevelManager' does not contain a definition for 'LoadControls'",
-								"409,410": "'LevelManager' does not contain a definition for 'LoadControls'"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Scripts/LifeCounter.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 334,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								266,
-								266
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/Scripts/GameManager.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								452,
-								452
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.2,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/LevelManager.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 371,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								371,
-								371
+								790,
+								790
 							]
 						],
 						"settings":
@@ -927,11 +772,52 @@
 							"history_list_is_closing": true,
 							"oops":
 							{
+								"1248,1264": "'AlertMeter' does not contain a definition for 'ClearMeterSprite'",
+								"1266,1267": "'AlertMeter' does not contain a definition for 'ClearMeterSprite'",
+								"1306,1323": "'AlertMeter' does not contain a definition for 'UnlockMeterSprite'",
+								"1325,1326": "'AlertMeter' does not contain a definition for 'UnlockMeterSprite'",
+								"1366,1376": "'AlertMeter' does not contain a definition for 'SwapSprite'",
+								"1379,1380": "'AlertMeter' does not contain a definition for 'SwapSprite'",
+								"261,271": "'AlertMeter' is not a known identifier",
+								"455,465": "'AlertMeter' is not a known identifier",
+								"468,469": "Cannot convert from ? to [UnknownType AlertMeter]",
+								"884,900": "'AlertMeter' does not contain a definition for 'ClearMeterSprite'",
+								"902,903": "'AlertMeter' does not contain a definition for 'ClearMeterSprite'"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 214.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/PhoneManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
-								"173,185": "Method 'LoadGameOver' can be made static.",
-								"244,253": "Method 'StartGame' can be made static.",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"312,324": "Method 'LoadControls' can be made static."
+								"144,154": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely."
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
@@ -939,60 +825,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "Assets/Scripts/BossManager.cs",
+					"buffer": 2,
+					"file": "Assets/Scripts/Laser.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1269,
+						"buffer_size": 464,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								259,
-								259
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"205,212": "Name should have prefix '_'. (Rule 'Fields').",
-								"226,239": "Name should have prefix '_'. (Rule 'Fields').",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"280,290": "Name should have prefix '_'. (Rule 'Fields')."
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Assets/Scripts/EnemyShip.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2676,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1256,
-								1256
+								362,
+								362
 							]
 						],
 						"settings":
@@ -1000,22 +850,10 @@
 							"oops":
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
-								"139,149": "Name should have prefix '_'. (Rule 'Fields').",
-								"1608,1609": "Assignment is redundant",
-								"174,179": "Name should have prefix '_'. (Rule 'Fields').",
-								"198,201": "'SPS' should start with a lower case letter. (Rule 'Fields')",
-								"1987,1997": "Use 'var' keyword",
-								"2064,2065": "Type cast is redundant",
-								"230,236": "Name should have prefix '_'. (Rule 'Fields').",
+								"132,138": "Name should have prefix '_'. (Rule 'Fields').",
+								"163,168": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"263,272": "Name should have prefix '_'. (Rule 'Fields').",
-								"318,321": "Name should have prefix '_'. (Rule 'Fields').",
-								"344,348": "Name should have prefix '_'. (Rule 'Fields').",
-								"366,372": "Name should have prefix '_'. (Rule 'Fields').",
-								"476,478": "Name should have prefix '_'. (Rule 'Fields').",
-								"504,508": "Name should have prefix '_'. (Rule 'Fields').",
-								"527,531": "Name should have prefix '_'. (Rule 'Fields').",
-								"705,715": "Parameter can be declared with base type"
+								"261,271": "Parameter can be declared with base type"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"tab_size": 4,
@@ -1025,36 +863,176 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
 				{
-					"buffer": 8,
-					"file": "/E/DeepRepos/story_teller/StoryTeller/Assets/Scripts/DialogueManager.cs",
+					"buffer": 3,
+					"file": "Assets/Scripts/PlayerController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1797,
+						"buffer_size": 2456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								1122,
+								1122
 							]
 						],
 						"settings":
 						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"1344,1354": "Use 'var' keyword",
+								"1435,1436": "Type cast is redundant",
+								"201,207": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"277,281": "Name should have prefix '_'. (Rule 'Fields').",
+								"307,311": "Name should have prefix '_'. (Rule 'Fields').",
+								"335,339": "Name should have prefix '_'. (Rule 'Fields').",
+								"359,363": "Name should have prefix '_'. (Rule 'Fields').",
+								"417,420": "Name should have prefix '_'. (Rule 'Fields').",
+								"492,496": "Name should have prefix '_'. (Rule 'Fields').",
+								"513,517": "Name should have prefix '_'. (Rule 'Fields').",
+								"793,803": "Parameter can be declared with base type"
+							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 78.0,
+						"translation.y": 429.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/LevelManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"173,185": "Method 'LoadGameOver' can be made static.",
+								"244,253": "Method 'StartGame' can be made static.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"312,321": "Method 'LoadTitle' can be made static.",
+								"377,389": "Method 'LoadControls' can be made static."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/GameManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1789,
+								1789
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1692,1703": "'PhoneManager' does not contain a definition for 'AnswerPhone'",
+								"1705,1706": "'PhoneManager' does not contain a definition for 'AnswerPhone'",
+								"1777,1786": "'PhoneManager' does not contain a definition for 'PhoneIdle'",
+								"1788,1789": "'PhoneManager' does not contain a definition for 'PhoneIdle'",
+								"1874,1883": "'PhoneManager' does not contain a definition for 'PhoneRing'",
+								"1885,1886": "'PhoneManager' does not contain a definition for 'PhoneRing'",
+								"2004,2012": "'ScoreManager' does not contain a definition for 'SetScore'",
+								"2019,2020": "'ScoreManager' does not contain a definition for 'SetScore'",
+								"295,307": "'PhoneManager' is not a known identifier",
+								"576,588": "'ScoreManager' is not a known identifier",
+								"868,880": "'ScoreManager' is not a known identifier",
+								"883,884": "Cannot convert from ? to [UnknownType ScoreManager]",
+								"909,921": "'PhoneManager' is not a known identifier",
+								"924,925": "Cannot convert from ? to [UnknownType PhoneManager]"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/AlertMeter.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"140,151": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"443,444": "Parameter can be IComparable"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1088,7 +1066,7 @@
 		"cols":
 		[
 			0.0,
-			0.5671875,
+			0.36599702381,
 			1.0
 		],
 		"rows":
@@ -1131,6 +1109,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"laser",
+				"Scripts\\Laser.cs"
+			],
+			[
+				"phon",
+				"Scripts\\PhoneManager.cs"
+			],
+			[
+				"Leve",
+				"Scripts\\LevelManager.cs"
+			],
+			[
+				"Al",
+				"Scripts\\AlertMeter.cs"
+			],
+			[
+				"b",
+				"Scripts\\BossManager.cs"
+			],
 			[
 				"G",
 				"Scripts\\GameManager.cs"
@@ -1256,7 +1254,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

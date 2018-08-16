@@ -201,6 +201,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114427977673012228, guid: 5a7a3e8ae53594a458c805b7ac971769,
+        type: 2}
+      propertyPath: lasers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4849775474792596, guid: 5a7a3e8ae53594a458c805b7ac971769, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.24
@@ -238,6 +243,12 @@ Prefab:
       propertyPath: _speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114427977673012228, guid: 5a7a3e8ae53594a458c805b7ac971769,
+        type: 2}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1288391914626246, guid: 78e9bc85c920f7d46b286ff06f603dda,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a7a3e8ae53594a458c805b7ac971769, type: 2}
   m_IsPrefabParent: 0
@@ -414,6 +425,16 @@ Prefab:
     - target: {fileID: 4716764453264360, guid: 5d6d56c57cecdc849ad86cbe0527ef5f, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82024705574575022, guid: 5d6d56c57cecdc849ad86cbe0527ef5f,
+        type: 2}
+      propertyPath: Priority
+      value: 152
+      objectReference: {fileID: 0}
+    - target: {fileID: 82024705574575022, guid: 5d6d56c57cecdc849ad86cbe0527ef5f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d6d56c57cecdc849ad86cbe0527ef5f, type: 2}

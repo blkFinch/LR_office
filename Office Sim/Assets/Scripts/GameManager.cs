@@ -7,10 +7,15 @@ public class GameManager : MonoBehaviour {
 
 	// turn true to begin boss loop
 	public bool bossInPlay  = false;
+	public bool phoneInPlay = false;
 	
 	BossManager bm;
 	public float _bps = 0.2f;
 
+	PhoneManager pm;
+	public float _pps = 0.1f;
+
+	bool phoneIsActive = false;
 	bool bossIsActive = false;
 	bool screenIsHidden = false;
 	bool counting = false;
@@ -34,6 +39,8 @@ public class GameManager : MonoBehaviour {
 		lc = FindObjectOfType<LifeCounter>();
 		pc = FindObjectOfType<PlayerController>();
 		sm = FindObjectOfType<ScoreManager>();
+		pm = FindObjectOfType<PhoneManager>();
+
 		SpawnFormation();
 	}
 
@@ -60,16 +67,41 @@ public class GameManager : MonoBehaviour {
 			float p = _bps * Time.deltaTime;
 	        if(Random.value < p) { ActivateBoss(); }
 		}
+
+		if(!phoneIsActive){
+			float t = _pps * Time.deltaTime;
+	        if(Random.value < t) { ActivatePhone(); }
+		}
+
+		if(phoneIsActive && Input.GetKeyDown(KeyCode.P)){ 
+			pc.PowerUpLaser();
+			pm.AnswerPhone();
+		}
+	}
+
+	public void DeactivatePhone(){
+		phoneIsActive = false;
+		pm.PhoneIdle();
+	}
+
+	public void ActivatePhone(){
+		if(phoneInPlay){
+			phoneIsActive = true;
+			pm.PhoneRing();
+			Invoke("DeactivatePhone", 2f);
+		}
 	}
 
 	public void AddScore(int points){
 		score += points;
+		CheckScore();
 		sm.SetScore(score);
 	}
 
 
 	public void LoseLife(){
 		playerLives --;
+		pc.PowerDownLaser();
 		if(playerLives < 0){ lm.LoadGameOver(); }
 		else{
 			lc.RenderClock(playerLives);
@@ -93,6 +125,15 @@ public class GameManager : MonoBehaviour {
 		}else{ 
 			bm.StopCountdown(); 
 			counting = false;
+		}
+	}
+
+	void CheckScore(){
+		if(score > 300){
+			phoneInPlay = true;
+		}
+		if(score > 600){
+			bossInPlay = true;
 		}
 	}
 
